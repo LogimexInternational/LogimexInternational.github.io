@@ -42,9 +42,9 @@ pluralizelisttitles = false
     
     # Branding
     disabled_logo = false
-    logo_text = "Logimex Group"
-    logo = "img/logo.png"
-    logo_small = "img/logo-small.png"
+    logo_text = "Logimex International"
+    logo = "img/logimex-logo.png"
+    logo_small = "/img/logimex-logo-small.png"
     
     # Contact settings
     address = """<p><strong>Logimex International</strong><br>Jaipur, India</p>"""
