@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Universal</title>
-    <link>http://localhost:1313/hugo-universal-theme/categories/</link>
-    <description>Recent content in Categories on Universal</description>
+    <title>Categories on LogimexInternational</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on LogimexInternational</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Aug 2021 21:29:20 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/hugo-universal-theme/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lorem</title>
-      <link>http://localhost:1313/hugo-universal-theme/categories/lorem/</link>
+      <link>http://localhost:1313/categories/lorem/</link>
       <pubDate>Sun, 01 Aug 2021 21:29:20 +0200</pubDate>
-      <guid>http://localhost:1313/hugo-universal-theme/categories/lorem/</guid>
+      <guid>http://localhost:1313/categories/lorem/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>http://localhost:1313/hugo-universal-theme/categories/programming/</link>
+      <link>http://localhost:1313/categories/programming/</link>
       <pubDate>Sun, 01 Aug 2021 21:29:20 +0200</pubDate>
-      <guid>http://localhost:1313/hugo-universal-theme/categories/programming/</guid>
+      <guid>http://localhost:1313/categories/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Pseudo</title>
-      <link>http://localhost:1313/hugo-universal-theme/categories/pseudo/</link>
+      <link>http://localhost:1313/categories/pseudo/</link>
       <pubDate>Sun, 01 Aug 2021 21:29:20 +0200</pubDate>
-      <guid>http://localhost:1313/hugo-universal-theme/categories/pseudo/</guid>
+      <guid>http://localhost:1313/categories/pseudo/</guid>
       <description></description>
     </item>
     <item>
       <title>Starting</title>
-      <link>http://localhost:1313/hugo-universal-theme/categories/starting/</link>
+      <link>http://localhost:1313/categories/starting/</link>
       <pubDate>Wed, 24 Jun 2015 13:50:46 +0200</pubDate>
-      <guid>http://localhost:1313/hugo-universal-theme/categories/starting/</guid>
+      <guid>http://localhost:1313/categories/starting/</guid>
       <description></description>
     </item>
   </channel>
