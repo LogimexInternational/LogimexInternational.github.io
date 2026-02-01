@@ -2,122 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Logimex International</title>
-    <link>http://localhost:53107/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Logimex International</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:53107/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Leadership</title>
-      <link>http://localhost:53107/about/leadership/</link>
+      <link>http://localhost:1313/about/leadership/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53107/about/leadership/</guid>
+      <guid>http://localhost:1313/about/leadership/</guid>
       <description>&lt;h2 id=&#34;our-leadership-team&#34;&gt;Our Leadership Team&lt;/h2&gt;&#xA;&lt;p&gt;Logimex International is guided by a team of experienced professionals committed to excellence, integrity, and innovation.&lt;/p&gt;&#xA;&lt;h3 id=&#34;executive-team&#34;&gt;Executive Team&lt;/h3&gt;&#xA;&lt;p&gt;Our leadership brings decades of combined experience across logistics, retail, security, and corporate management.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Our success is driven by our people and their commitment to getting the job done, every day, safely and efficiently.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;— &lt;strong&gt;Chairman, Logimex International&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Logistics</title>
-      <link>http://localhost:53107/divisions/logistics/</link>
+      <link>http://localhost:1313/divisions/logistics/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53107/divisions/logistics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>New Partnership</title>
-      <link>http://localhost:53107/news/new-partnership/</link>
-      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53107/news/new-partnership/</guid>
+      <guid>http://localhost:1313/divisions/logistics/</guid>
       <description></description>
     </item>
     <item>
       <title>Our History</title>
-      <link>http://localhost:53107/about/history/</link>
+      <link>http://localhost:1313/about/history/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53107/about/history/</guid>
+      <guid>http://localhost:1313/about/history/</guid>
       <description>&lt;h2 id=&#34;our-journey&#34;&gt;Our Journey&lt;/h2&gt;&#xA;&lt;p&gt;Logimex International was founded in 2008 with a vision to revolutionize the logistics industry. What started as a small freight forwarding operation has grown into a global conglomerate spanning multiple industries.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-milestones&#34;&gt;Key Milestones&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;2008&lt;/strong&gt; — Logimex Logistics founded in Jaipur, Rajasthan&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;2012&lt;/strong&gt; — Expanded operations to international markets&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;2015&lt;/strong&gt; — Launched Logimex Retail division&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;2018&lt;/strong&gt; — Established Logimex Security services&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;2020&lt;/strong&gt; — Reached operations in multiple countries&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;2024&lt;/strong&gt; — Celebrated &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;18&#xD;&#xA; years of industry leadership&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>Press Release</title>
-      <link>http://localhost:53107/news/press-release-1/</link>
-      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53107/news/press-release-1/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Retail</title>
-      <link>http://localhost:53107/divisions/retail/</link>
+      <link>http://localhost:1313/divisions/retail/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53107/divisions/retail/</guid>
+      <guid>http://localhost:1313/divisions/retail/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>http://localhost:53107/divisions/security/</link>
+      <link>http://localhost:1313/divisions/security/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53107/divisions/security/</guid>
+      <guid>http://localhost:1313/divisions/security/</guid>
       <description></description>
     </item>
     <item>
       <title>Sustainability</title>
-      <link>http://localhost:53107/sustainability/</link>
+      <link>http://localhost:1313/sustainability/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53107/sustainability/</guid>
+      <guid>http://localhost:1313/sustainability/</guid>
       <description></description>
     </item>
     <item>
       <title>Categories Post</title>
-      <link>http://localhost:53107/blog/categories-post/</link>
+      <link>http://localhost:1313/blog/categories-post/</link>
       <pubDate>Sun, 01 Aug 2021 21:29:20 +0200</pubDate>
-      <guid>http://localhost:53107/blog/categories-post/</guid>
+      <guid>http://localhost:1313/blog/categories-post/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a post with multiple categories in the frontmatter:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;categories = [&amp;quot;programming&amp;quot;,&amp;quot;lorem&amp;quot;,&amp;quot;pseudo&amp;quot;]&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mauris nulla, vestibulum vel auctor sed, posuere eu lorem. Aliquam consequat augue ut accumsan mollis. Suspendisse malesuada sodales tincidunt. Vivamus sed erat ac augue bibendum porta sed id ipsum. Ut mollis mauris eget ligula sagittis cursus. Aliquam id pharetra tellus. Pellentesque sed tempus risus. Proin id hendrerit ante. Vestibulum vitae urna ut mauris ultricies dignissim. Ut ante turpis, tristique vitae sagittis quis, sagittis nec diam. Fusce pulvinar cursus porta. Vivamus maximus leo dolor, ut pellentesque lorem fringilla nec. Mauris faucibus turpis posuere sapien euismod, a ullamcorper mi maximus.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linked post</title>
-      <link>http://localhost:53107/blog/linked-post/</link>
+      <link>http://localhost:1313/blog/linked-post/</link>
       <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
-      <guid>http://localhost:53107/blog/linked-post/</guid>
+      <guid>http://localhost:1313/blog/linked-post/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;menu = &amp;quot;main&amp;quot;&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mauris nulla, vestibulum vel auctor sed, posuere eu lorem. Aliquam consequat augue ut accumsan mollis. Suspendisse malesuada sodales tincidunt. Vivamus sed erat ac augue bibendum porta sed id ipsum. Ut mollis mauris eget ligula sagittis cursus. Aliquam id pharetra tellus. Pellentesque sed tempus risus. Proin id hendrerit ante. Vestibulum vitae urna ut mauris ultricies dignissim. Ut ante turpis, tristique vitae sagittis quis, sagittis nec diam. Fusce pulvinar cursus porta. Vivamus maximus leo dolor, ut pellentesque lorem fringilla nec. Mauris faucibus turpis posuere sapien euismod, a ullamcorper mi maximus.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Go is for lovers</title>
-      <link>http://localhost:53107/blog/go-is-for-lovers/</link>
+      <link>http://localhost:1313/blog/go-is-for-lovers/</link>
       <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
-      <guid>http://localhost:53107/blog/go-is-for-lovers/</guid>
+      <guid>http://localhost:1313/blog/go-is-for-lovers/</guid>
       <description>&lt;p&gt;Hugo uses the excellent &lt;a href=&#34;https://go.dev/&#34;&gt;go&lt;/a&gt; &lt;a href=&#34;https://pkg.go.dev/html/template&#34;&gt;html/template&lt;/a&gt; library for&#xA;its template engine. It is an extremely lightweight engine that provides a very&#xA;small amount of logic. In our experience that it is just the right amount of&#xA;logic to be able to create a good static website. If you have used other&#xA;template systems from different languages or frameworks you will find a lot of&#xA;similarities in go templates.&lt;/p&gt;&#xA;&lt;p&gt;This document is a brief primer on using go templates. The &lt;a href=&#34;https://pkg.go.dev/html/template&#34;&gt;go docs&lt;/a&gt;&#xA;provide more details.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hugo is for lovers</title>
-      <link>http://localhost:53107/blog/hugo-is-for-lovers/</link>
+      <link>http://localhost:1313/blog/hugo-is-for-lovers/</link>
       <pubDate>Mon, 03 Aug 2015 13:39:46 +0200</pubDate>
-      <guid>http://localhost:53107/blog/hugo-is-for-lovers/</guid>
-      <description>This is the summary Goto &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the appropriate version for your os and architecture. Save it somewhere specific as we will be using it in the next step. More complete instructions are available at &lt;a href=&#34;http://localhost:53107/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;</description>
+      <guid>http://localhost:1313/blog/hugo-is-for-lovers/</guid>
+      <description>This is the summary Goto &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the appropriate version for your os and architecture. Save it somewhere specific as we will be using it in the next step. More complete instructions are available at &lt;a href=&#34;http://localhost:1313/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;</description>
     </item>
     <item>
       <title>Creating a new theme</title>
-      <link>http://localhost:53107/blog/creating-a-new-theme/</link>
+      <link>http://localhost:1313/blog/creating-a-new-theme/</link>
       <pubDate>Wed, 24 Jun 2015 13:50:46 +0200</pubDate>
-      <guid>http://localhost:53107/blog/creating-a-new-theme/</guid>
+      <guid>http://localhost:1313/blog/creating-a-new-theme/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ll start with creating a new site with a very basic template. Then we&amp;rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:53107/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53107/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description></description>
     </item>
     <item>
       <title>FAQ</title>
-      <link>http://localhost:53107/faq/</link>
+      <link>http://localhost:1313/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53107/faq/</guid>
+      <guid>http://localhost:1313/faq/</guid>
       <description>&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-what-to-do-if-i-have-still-not-received-the-order&#34;&gt;1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER?&lt;/h2&gt;&#xA;&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Migrate from Jekyll</title>
-      <link>http://localhost:53107/blog/migrate-from-jekyll/</link>
+      <link>http://localhost:1313/blog/migrate-from-jekyll/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53107/blog/migrate-from-jekyll/</guid>
+      <guid>http://localhost:1313/blog/migrate-from-jekyll/</guid>
       <description>&lt;h2 id=&#34;move-static-content-to-static&#34;&gt;Move static content to &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Jekyll has a rule that any directory not starting with &lt;code&gt;_&lt;/code&gt; will be copied as-is to the &lt;code&gt;_site&lt;/code&gt; output. Hugo keeps all static content under &lt;code&gt;static&lt;/code&gt;. You should therefore move it all there.&#xA;With Jekyll, something that looked like&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/&#xD;&#xA;    ▾ images/&#xD;&#xA;        logo.png&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;should become&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/&#xD;&#xA;    ▾ static/&#xD;&#xA;        ▾ images/&#xD;&#xA;            logo.png&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as &lt;code&gt;CNAME&lt;/code&gt;) to be moved to &lt;code&gt;static&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

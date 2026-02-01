@@ -1404,6 +1404,109 @@ html {
     background-image: url('/img/divisions-banner.png');
 }
 
+/* Sustainability Hero - use sustainability banner image (falls back to about-banner if not available) */
+.about-hero.sustainability-hero::before {
+    background-image: url('/img/sustainability-banner.png'), url('/img/about-banner.png');
+}
+
+/* Page Intro Section - centered text below hero */
+.page-intro-section {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.page-intro-section .lead-text {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3rem;
+    color: #4a4a4a;
+}
+
+/* =========================================
+   CERTIFICATION CARDS
+   ========================================= */
+.certifications-grid {
+    margin-top: 40px;
+}
+
+.certification-card {
+    background: #ffffff;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.certification-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.certification-header {
+    padding: 25px;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+    text-align: center;
+}
+
+.certification-header h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: #0F172A;
+    margin: 10px 0 5px;
+}
+
+.certification-header .cert-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 400;
+    margin: 0;
+}
+
+.cert-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cert-badge.certified {
+    background: linear-gradient(135deg, #C5A059 0%, #D4B76A 100%);
+    color: #ffffff;
+}
+
+.cert-badge.compliant {
+    background: rgba(197, 160, 89, 0.15);
+    color: #C5A059;
+    border: 1px solid #C5A059;
+}
+
+.cert-badge.in-process {
+    background: rgba(15, 23, 42, 0.1);
+    color: #0F172A;
+    border: 1px solid rgba(15, 23, 42, 0.3);
+}
+
+.certification-body {
+    padding: 25px;
+    flex: 1;
+}
+
+.certification-body p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #4a4a4a;
+    margin: 0;
+}
+
 /* Dark Tint Overlay - lighter for better image visibility */
 .about-hero::after {
     content: '';

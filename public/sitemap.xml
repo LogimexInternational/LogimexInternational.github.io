@@ -2,99 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:53107/divisions/</loc>
+    <loc>http://localhost:1313/divisions/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/about/leadership/</loc>
+    <loc>http://localhost:1313/about/leadership/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/divisions/logistics/</loc>
+    <loc>http://localhost:1313/divisions/logistics/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/news/new-partnership/</loc>
+    <loc>http://localhost:1313/about/history/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/news/</loc>
+    <loc>http://localhost:1313/divisions/retail/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/about/history/</loc>
+    <loc>http://localhost:1313/divisions/security/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/news/press-release-1/</loc>
+    <loc>http://localhost:1313/sustainability/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/divisions/retail/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/divisions/security/</loc>
-    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:53107/sustainability/</loc>
-    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:53107/about/</loc>
-    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:53107/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2021-08-01T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2021-08-01T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/blog/categories-post/</loc>
+    <loc>http://localhost:1313/blog/categories-post/</loc>
     <lastmod>2021-08-01T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/tags/golang/</loc>
+    <loc>http://localhost:1313/tags/golang/</loc>
     <lastmod>2021-08-01T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/tags/hugo/</loc>
+    <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2021-08-01T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/categories/lorem/</loc>
+    <loc>http://localhost:1313/categories/lorem/</loc>
     <lastmod>2021-08-01T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/categories/programming/</loc>
+    <loc>http://localhost:1313/categories/programming/</loc>
     <lastmod>2021-08-01T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/tags/programming/</loc>
+    <loc>http://localhost:1313/tags/programming/</loc>
     <lastmod>2021-08-01T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/categories/pseudo/</loc>
+    <loc>http://localhost:1313/categories/pseudo/</loc>
     <lastmod>2021-08-01T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2021-08-01T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/tags/theme/</loc>
+    <loc>http://localhost:1313/tags/theme/</loc>
     <lastmod>2021-08-01T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/blog/linked-post/</loc>
+    <loc>http://localhost:1313/blog/linked-post/</loc>
     <lastmod>2015-10-02T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/tags/go/</loc>
+    <loc>http://localhost:1313/tags/go/</loc>
     <lastmod>2015-09-17T13:47:08+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/blog/go-is-for-lovers/</loc>
+    <loc>http://localhost:1313/blog/go-is-for-lovers/</loc>
     <lastmod>2015-09-17T13:47:08+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/blog/hugo-is-for-lovers/</loc>
+    <loc>http://localhost:1313/blog/hugo-is-for-lovers/</loc>
     <lastmod>2015-08-03T13:39:46+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/blog/creating-a-new-theme/</loc>
+    <loc>http://localhost:1313/blog/creating-a-new-theme/</loc>
     <lastmod>2015-06-24T13:50:46+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/categories/starting/</loc>
+    <loc>http://localhost:1313/categories/starting/</loc>
     <lastmod>2015-06-24T13:50:46+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:53107/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>http://localhost:53107/faq/</loc>
+    <loc>http://localhost:1313/faq/</loc>
   </url><url>
-    <loc>http://localhost:53107/tags/ipsum/</loc>
+    <loc>http://localhost:1313/tags/ipsum/</loc>
   </url><url>
-    <loc>http://localhost:53107/blog/migrate-from-jekyll/</loc>
+    <loc>http://localhost:1313/blog/migrate-from-jekyll/</loc>
   </url>
 </urlset>

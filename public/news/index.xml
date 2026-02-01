@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Logimex International</title>
-    <link>http://localhost:53107/news/</link>
+    <link>http://localhost:1313/news/</link>
     <description>Recent content in News on Logimex International</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:53107/news/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Partnership</title>
-      <link>http://localhost:53107/news/new-partnership/</link>
+      <link>http://localhost:1313/news/new-partnership/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53107/news/new-partnership/</guid>
+      <guid>http://localhost:1313/news/new-partnership/</guid>
       <description></description>
     </item>
     <item>
       <title>Press Release</title>
-      <link>http://localhost:53107/news/press-release-1/</link>
+      <link>http://localhost:1313/news/press-release-1/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53107/news/press-release-1/</guid>
+      <guid>http://localhost:1313/news/press-release-1/</guid>
       <description></description>
     </item>
   </channel>
