@@ -1,0 +1,7 @@
+{{/* shortcode: years
+   Usage: {{< years from="2008" >}}  -> outputs number of years since `from` (e.g., 18)
+*/}}
+{{ $from := (.Get "from") | default "2008" | int }}
+{{ $now := now.Format "2006" | int }}
+{{ $years := sub $now $from }}
+{{ printf "%d" $years }}
