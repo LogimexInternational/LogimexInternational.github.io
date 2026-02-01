@@ -15,16 +15,16 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .text-uppercase {
     font-weight: 600;
 }
 
-h1 { font-size: 3.5rem; } /* Make main titles huge and dramatic */
-h2 { font-size: 2.5rem; }
+h1 { font-size: 4.5rem; } /* Make main titles huge and dramatic */
+h2 { font-size: 3.2rem; }
 
 /* BODY TEXT - Clean & Airy */
 body, p, li, a {
     font-family: 'Montserrat', sans-serif;
     color: #4a4a4a; /* Soft Charcoal, not black */
     font-weight: 300; /* Thinner text looks more premium */
-    font-size: 16px;
-    line-height: 1.8; /* More spacing between lines */
+    font-size: 19px;
+    line-height: 1.9; /* More spacing between lines */
 }
 
 /* =========================================
@@ -188,7 +188,7 @@ a:hover {
 .home-hero {
     position: relative;
     background: linear-gradient(135deg, #0F172A 0%, #1e293b 100%);
-    padding: 180px 0 150px;
+    padding: 200px 0 180px;
     overflow: hidden;
 }
 
@@ -211,26 +211,129 @@ a:hover {
 
 .hero-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 5rem;
+    font-size: 6.5rem;
     font-weight: 600;
     color: #ffffff;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    overflow: hidden;
+}
+
+/* Apple-style Letter Animation */
+.title-word {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateY(40px) scale(0.9);
+    animation: titleReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: calc(0.08s * var(--i) + 0.3s);
+}
+
+.title-space {
+    display: inline-block;
+    width: 0.3em;
+}
+
+@keyframes titleReveal {
+    0% {
+        opacity: 0;
+        filter: blur(12px);
+        transform: translateY(40px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Golden Line Animation */
+.hero-line {
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #C5A059, transparent);
+    margin: 0 auto 25px;
+    animation: lineExpand 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 2s;
+}
+
+@keyframes lineExpand {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 200px;
+        opacity: 1;
+    }
+}
+
+/* Tagline - Division names */
+.hero-tagline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #C5A059;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: subtitleFade 1s ease forwards;
+    animation-delay: 2.2s;
 }
 
 .hero-subtitle {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 300;
-    color: rgba(255,255,255,0.8);
-    letter-spacing: 4px;
+    color: rgba(255,255,255,0);
+    letter-spacing: 5px;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    animation: subtitleFade 1s ease forwards;
+    animation-delay: 2.4s;
+}
+
+@keyframes subtitleFade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(5px);
+    }
+    100% {
+        opacity: 0.8;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* Hero Button Fade In */
+.btn-hero {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 13px;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation: buttonReveal 0.8s ease forwards;
+    animation-delay: 2.6s;
+}
+
+@keyframes buttonReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Section Base Styles */
 .home-section {
-    padding: 120px 0;
+    padding: 100px 0;
     position: relative;
 }
 
@@ -255,10 +358,10 @@ a:hover {
 /* Section Titles */
 .section-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.8rem;
+    font-size: 3.5rem;
     font-weight: 600;
     color: #0F172A;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     letter-spacing: 1px;
 }
 
@@ -267,10 +370,10 @@ a:hover {
 }
 
 .title-underline {
-    width: 60px;
-    height: 2px;
+    width: 80px;
+    height: 3px;
     background: #C5A059; /* Gold */
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .title-underline.center {
@@ -288,16 +391,16 @@ a:hover {
 
 /* Lead Text */
 .lead-text {
-    font-size: 1.15rem;
-    line-height: 2;
+    font-size: 1.35rem;
+    line-height: 1.9;
     color: #4a4a4a;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-weight: 300;
 }
 
 .section-text {
-    font-size: 1.1rem;
-    line-height: 2;
+    font-size: 1.3rem;
+    line-height: 1.9;
     color: #4a4a4a;
     font-weight: 300;
 }
@@ -305,10 +408,11 @@ a:hover {
 /* Impact Cards */
 .impact-card {
     text-align: center;
-    padding: 50px 35px;
+    padding: 60px 40px;
     background: transparent;
     border: 1px solid rgba(255,255,255,0.1);
     transition: all 0.5s ease;
+    min-height: 320px;
 }
 
 .impact-card:hover {
@@ -317,10 +421,10 @@ a:hover {
 }
 
 .impact-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 30px;
-    border: 1px solid #C5A059;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 35px;
+    border: 2px solid #C5A059;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -332,7 +436,7 @@ a:hover {
 }
 
 .impact-icon i {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     color: #C5A059;
     transition: all 0.4s ease;
 }
@@ -343,15 +447,15 @@ a:hover {
 
 .impact-card h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
+    font-size: 2.1rem;
     color: #ffffff;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     font-weight: 600;
 }
 
 .impact-card p {
     color: rgba(255,255,255,0.7);
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     line-height: 1.8;
     font-weight: 300;
 }
@@ -360,12 +464,12 @@ a:hover {
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 20px;
 }
 
 .stat-item {
     background: #ffffff;
-    padding: 35px;
+    padding: 45px 35px;
     text-align: center;
     transition: all 0.4s ease;
     border: 1px solid #E5E7EB;
@@ -379,15 +483,15 @@ a:hover {
 .stat-number {
     display: block;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.8rem;
+    font-size: 4rem;
     font-weight: 600;
     color: #0F172A;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .stat-label {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     color: #888;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -397,24 +501,25 @@ a:hover {
 /* Values Section */
 .vision-statement {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
+    font-size: 2.1rem;
     color: rgba(255,255,255,0.9);
     font-style: italic;
-    max-width: 800px;
-    margin: 0 auto 70px;
-    line-height: 1.9;
+    max-width: 850px;
+    margin: 0 auto 60px;
+    line-height: 1.8;
     font-weight: 400;
 }
 
 .values-row {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .value-card {
     background: transparent;
-    padding: 45px 30px;
+    padding: 50px 35px;
     text-align: center;
     height: 100%;
+    min-height: 280px;
     transition: all 0.4s ease;
     border: 1px solid rgba(255,255,255,0.1);
 }
@@ -426,7 +531,7 @@ a:hover {
 
 .value-number {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 600;
     color: rgba(197, 160, 89, 0.3); /* Faded Gold */
     margin-bottom: 15px;
@@ -435,7 +540,7 @@ a:hover {
 
 .value-card h4 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: #ffffff;
     margin-bottom: 15px;
     font-weight: 600;
@@ -443,23 +548,33 @@ a:hover {
 
 .value-card p {
     color: rgba(255,255,255,0.7);
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.8;
     font-weight: 300;
 }
 
 /* Division Cards */
 .divisions-row {
-    margin-top: 60px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divisions-row > div {
+    display: flex;
 }
 
 .division-card {
     background: #ffffff;
-    padding: 55px 40px;
+    padding: 60px 45px;
     text-align: center;
     transition: all 0.5s ease;
     height: 100%;
+    min-height: 420px;
     border: 1px solid #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .division-card:hover {
@@ -468,10 +583,10 @@ a:hover {
 }
 
 .division-icon {
-    width: 90px;
-    height: 90px;
-    margin: 0 auto 35px;
-    border: 1px solid #0F172A;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 40px;
+    border: 2px solid #0F172A;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -484,7 +599,7 @@ a:hover {
 }
 
 .division-icon i {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #0F172A;
     transition: all 0.4s ease;
 }
@@ -495,24 +610,25 @@ a:hover {
 
 .division-card h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
+    font-size: 2.1rem;
     color: #0F172A;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     font-weight: 600;
 }
 
 .division-card p {
     color: #666;
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     line-height: 1.8;
     margin-bottom: 30px;
     font-weight: 300;
+    flex-grow: 1;
 }
 
 .division-link {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #9A252A;
@@ -536,16 +652,16 @@ a:hover {
 /* Quote Block */
 .quote-block {
     position: relative;
-    padding: 80px 50px;
+    padding: 70px 50px;
 }
 
 .quote-mark {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 10rem;
+    font-size: 12rem;
     color: #C5A059;
     opacity: 0.2;
     position: absolute;
-    top: -30px;
+    top: -40px;
     left: 50%;
     transform: translateX(-50%);
     line-height: 1;
@@ -553,10 +669,10 @@ a:hover {
 
 .quote-text {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     font-style: italic;
     color: #0F172A;
-    line-height: 1.9;
+    line-height: 1.8;
     margin-bottom: 30px;
     position: relative;
     z-index: 1;
@@ -565,7 +681,7 @@ a:hover {
 
 .quote-author {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #9A252A;
     letter-spacing: 2px;
