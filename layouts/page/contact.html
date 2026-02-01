@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title contact-title">Get in Touch</h1>
+                    <div class="hero-line contact-line"></div>
+                    <p class="hero-tagline contact-tagline">We'd love to hear from you</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Contact Section -->
+        <section class="contact-section section-white">
+            <div class="container">
+                <div class="row">
+                    <!-- Contact Form Column -->
+                    <div class="col-md-7">
+                        <div class="contact-form-wrapper reveal-item">
+                            <h2 class="section-title">Send Us a Message</h2>
+                            <div class="title-underline left"></div>
+
+                            <div id="contact-message"></div>
+
+                            <form id="contact-form" class="luxury-form">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group luxury-input-group">
+                                            <label for="contact-name">Name</label>
+                                            <input type="text" class="form-control luxury-input" name="name" id="contact-name" placeholder="Your full name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group luxury-input-group">
+                                            <label for="contact-phone">Contact</label>
+                                            <input type="tel" class="form-control luxury-input" name="contact" id="contact-phone" placeholder="+91 1234567890" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group luxury-input-group">
+                                            <label for="contact-email">Email</label>
+                                            <input type="email" autocomplete="email" class="form-control luxury-input" name="email" id="contact-email" placeholder="you@example.com" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group luxury-input-group">
+                                            <label for="contact-purpose">Purpose</label>
+                                            <textarea class="form-control luxury-input luxury-textarea" name="purpose" id="contact-purpose" placeholder="Tell us the purpose of your inquiry..." rows="5" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 form-submit-center">
+                                        <button type="submit" id="contact-submit" class="btn btn-luxury-primary">
+                                            <i class="fa fa-paper-plane"></i> Send
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <!-- Form handled by /js/form-handler.js (Google Sheets + Apps Script) -->
+                        </div>
+                    </div>
+
+                    <!-- Contact Info Column -->
+                    <div class="col-md-4 col-md-offset-1">
+                        <div class="contact-info-wrapper reveal-item">
+                            <h2 class="section-title">Contact Info</h2>
+                            <div class="title-underline left"></div>
+
+                            <div class="contact-info-card">
+                                <div class="contact-info-item">
+                                    <div class="contact-icon">
+                                        <i class="fa fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>Address</h4>
+                                        <a href="https://maps.app.goo.gl/RExRLcYw6KtRGwn18" target="_blank" rel="noopener">View on Google Maps</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-info-item">
+                                    <div class="contact-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>Phone</h4>
+                                        <a href="tel:+917976743800">+91 7976743800</a><br>
+                                        <a href="tel:+919461810301">+91 9461810301</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-info-item">
+                                    <div class="contact-icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>Email</h4>
+                                        <a href="mailto:logimexinternational@gmail.com">logimexinternational@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Social Links -->
+                            <div class="contact-social">
+                                <h4>Connect With Us</h4>
+                                <div class="social-icons">
+                                    {{ with .Site.Params.facebook }}
+                                    <a href="{{ . }}" class="social-icon" target="_blank" aria-label="Facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    {{ end }}
+                                    {{ with .Site.Params.twitter }}
+                                    <a href="{{ . }}" class="social-icon" target="_blank" aria-label="Twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    {{ end }}
+                                    {{ with .Site.Params.linkedin }}
+                                    <a href="{{ . }}" class="social-icon" target="_blank" aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    {{ end }}
+                                    {{ with .Site.Params.instagram }}
+                                    <a href="{{ . }}" class="social-icon" target="_blank" aria-label="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>
