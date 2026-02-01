@@ -1567,10 +1567,10 @@ html {
 }
 
 .about-content .lead-text {
-    font-size: 1.25rem;
-    line-height: 1.9;
+    font-size: 1.4rem;
+    line-height: 2;
     color: #4a4a4a;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -1825,6 +1825,15 @@ html {
     margin-bottom: 50px;
 }
 
+.difference-block .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.difference-block .col-md-4 {
+    display: flex;
+}
+
 .difference-card {
     background: #F5F3EF;
     border: 1px solid #E5E7EB;
@@ -1833,6 +1842,10 @@ html {
     transition: all 0.4s ease;
     height: 100%;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 280px;
 }
 
 .difference-card:hover {
@@ -1869,15 +1882,16 @@ html {
 
 .difference-card h4 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #0F172A;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .difference-card p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #666;
     margin: 0;
+    flex-grow: 1;
     line-height: 1.7;
 }
 
@@ -1896,7 +1910,7 @@ html {
 
 .chairman-message .quote-block {
     background: linear-gradient(135deg, #0F172A 0%, #1a2744 100%);
-    padding: 70px 60px;
+    padding: 80px 60px 70px;
     text-align: center;
     position: relative;
     border-left: 4px solid #C5A059;
@@ -1906,18 +1920,19 @@ html {
     font-family: 'Cormorant Garamond', serif;
     font-size: 7rem;
     color: #C5A059;
-    line-height: 0.5;
-    margin-bottom: 30px;
+    line-height: 0.8;
+    margin-bottom: 40px;
     opacity: 0.8;
+    display: block;
 }
 
 .chairman-message .quote-text {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #ffffff;
     font-style: italic;
-    line-height: 1.8;
-    margin-bottom: 35px;
+    line-height: 1.9;
+    margin-bottom: 40px;
 }
 
 .chairman-message .quote-author {
