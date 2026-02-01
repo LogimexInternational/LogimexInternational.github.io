@@ -14,45 +14,44 @@
 
         {{ partial "nav.html" . }}
 
-        {{ partial "breadcrumbs.html" . }}
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">{{ .Title }}</h1>
+                <div class="page-breadcrumb">
+                    <a href="/">Home</a> <span>/</span> <span>{{ .Title }}</span>
+                </div>
+            </div>
+        </section>
 
+        <!-- Main Content -->
         <div id="content">
             <div class="container">
-
                 <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <article class="page-content reveal-item">
+                            {{ .Content }}
+                        </article>
 
-                    <!-- *** MAIN COLUMN *** -->
-
-                    <div class="col-md-9" id="blog-post">
-
-                        <div id="post-content">
-                          {{ .Content }}
+                        <!-- Sub-pages Links -->
+                        <div class="about-nav reveal-item">
+                            <h3>Explore More</h3>
+                            <div class="about-nav-links">
+                                <a href="/about/history/" class="about-nav-link">
+                                    <span class="nav-icon"><i class="fa fa-history"></i></span>
+                                    <span class="nav-text">Our History</span>
+                                    <span class="nav-arrow"><i class="fa fa-arrow-right"></i></span>
+                                </a>
+                                <a href="/about/leadership/" class="about-nav-link">
+                                    <span class="nav-icon"><i class="fa fa-users"></i></span>
+                                    <span class="nav-text">Leadership Team</span>
+                                    <span class="nav-arrow"><i class="fa fa-arrow-right"></i></span>
+                                </a>
+                            </div>
                         </div>
-                        <!-- /#post-content -->
-
                     </div>
-                    <!-- /#blog-post -->
-
-                    <!-- *** MAIN COLUMN END *** -->
-
-                    <!-- *** RIGHT COLUMN *** -->
-
-                    <div class="col-md-3">
-
-                        <!-- *** SIDEBAR *** -->
-                        {{ partial "sidebar.html" . }}
-                        <!-- *** SIDEBAR END *** -->
-
-                    </div>
-                    <!-- /.col-md-3 -->
-
-                    <!-- *** RIGHT COLUMN END *** -->
-
                 </div>
-                <!-- /.row -->
-
             </div>
-            <!-- /.container -->
         </div>
         <!-- /#content -->
 

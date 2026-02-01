@@ -1,5 +1,174 @@
-/* your styles go here */
-/* Example site test */
+/* =========================================
+   LOGIMEX INTERNATIONAL - LUXURY STYLES
+   ========================================= */
+
+/* =========================================
+   1. FONTS: CORMORANT (Luxury) & MONTSERRAT
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap');
+
+/* HEADINGS - The "Sobha" Look */
+h1, h2, h3, h4, h5, h6, .navbar-brand, .text-uppercase {
+    font-family: 'Cormorant Garamond', serif;
+    color: #0F172A; /* Midnight Slate */
+    letter-spacing: 0.5px; 
+    font-weight: 600;
+}
+
+h1 { font-size: 3.5rem; } /* Make main titles huge and dramatic */
+h2 { font-size: 2.5rem; }
+
+/* BODY TEXT - Clean & Airy */
+body, p, li, a {
+    font-family: 'Montserrat', sans-serif;
+    color: #4a4a4a; /* Soft Charcoal, not black */
+    font-weight: 300; /* Thinner text looks more premium */
+    font-size: 16px;
+    line-height: 1.8; /* More spacing between lines */
+}
+
+/* =========================================
+   2. LUXURY COLOR OVERRIDES
+   ========================================= */
+
+/* --- BACKGROUNDS --- */
+body {
+    background-color: #FAFAFA; /* Alabaster White (Softer) */
+}
+
+/* Alternate sections (Gray/Silver) */
+.bar.background-gray, .box-gray {
+    background-color: #F0F2F5 !important;
+    border-top: 1px solid #E5E7EB;
+}
+
+/* Top Bar & Footer - Deep Midnight */
+#top {
+    background: #0F172A; /* Deep Midnight Slate */
+    color: #ffffff;
+    border-bottom: 3px solid #C5A059; /* The "Gold" Trim line */
+}
+
+#footer {
+    background: #0F172A;
+    color: #ffffff;
+    border-top: 3px solid #C5A059;
+}
+
+#copyright {
+    background: #0a0f1a;
+    color: rgba(255,255,255,0.7);
+}
+
+/* --- BUTTONS (The biggest change) --- */
+/* Make buttons sharp squares, not rounded blobs */
+.btn {
+    border-radius: 0px !important; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 12px 25px;
+    transition: all 0.4s ease;
+}
+
+/* Primary Button - Deep Wine/Bordeaux (Rich version of logo red) */
+.btn-primary, .btn-template-main {
+    background-color: #9A252A !important;
+    border: 1px solid #9A252A !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover, .btn-template-main:hover {
+    background-color: #0F172A !important; /* turns Navy on hover */
+    border-color: #0F172A !important;
+}
+
+/* Hero Button */
+.btn-hero {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.btn-hero:hover {
+    background-color: #C5A059;
+    border-color: #C5A059;
+    color: #0F172A;
+}
+
+/* Secondary Button (Ghost Style) */
+.btn-outline-primary {
+    color: #0F172A;
+    border: 1px solid #0F172A;
+    background: transparent;
+}
+
+/* --- LINKS & NAVIGATION --- */
+a {
+    color: #9A252A; /* Bordeaux Links */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #C5A059; /* Turns Gold on hover */
+    text-decoration: none;
+}
+
+/* Navbar Menu */
+.navbar-default {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #0F172A !important;
+    font-weight: 500;
+}
+
+/* Active Menu Item - Underlined with Gold */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background: transparent !important;
+    color: #9A252A !important;
+    border-bottom: 2px solid #C5A059; /* Gold Underline */
+}
+
+/* --- ICONS & BOXES --- */
+/* Minimalist Boxes */
+.box-simple {
+    border: 1px solid #E5E7EB; /* Very subtle border */
+    background: #fff;
+    padding: 30px;
+    transition: all 0.4s ease;
+    min-height: 230px;
+}
+
+.box-simple:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Soft, expensive shadow */
+    border-color: #C5A059; /* Gold border on hover */
+    transform: translateY(-5px);
+}
+
+.box-simple .icon {
+    color: #0F172A;
+    border-color: transparent; /* Remove circle border for cleaner look */
+    font-size: 40px;
+}
+
+/* =========================================
+   3. ORIGINAL BOX SIZING (PRESERVED)
+   ========================================= */
 
 .box-image-text .image {
     min-height: 190px;
@@ -11,6 +180,622 @@
     margin: auto;
 }
 
-.box-simple {
-    min-height: 230px;
+/* =========================================
+   4. HOMEPAGE SECTIONS
+   ========================================= */
+
+/* Hero Section */
+.home-hero {
+    position: relative;
+    background: linear-gradient(135deg, #0F172A 0%, #1e293b 100%);
+    padding: 180px 0 150px;
+    overflow: hidden;
+}
+
+.home-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/img/pattern-dots.png') repeat;
+    opacity: 0.05;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+/* Section Base Styles */
+.home-section {
+    padding: 120px 0;
+    position: relative;
+}
+
+.section-white {
+    background: #FAFAFA;
+}
+
+.section-dark {
+    background: #0F172A;
+}
+
+.section-gradient {
+    background: linear-gradient(135deg, #0F172A 0%, #1e293b 100%);
+}
+
+.section-quote {
+    background: #F0F2F5;
+    border-top: 1px solid #E5E7EB;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+/* Section Titles */
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #0F172A;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.section-title.white {
+    color: #ffffff;
+}
+
+.title-underline {
+    width: 60px;
+    height: 2px;
+    background: #C5A059; /* Gold */
+    margin-bottom: 40px;
+}
+
+.title-underline.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-underline.left {
+    margin-left: 0;
+}
+
+.title-underline.white {
+    background: #C5A059;
+}
+
+/* Lead Text */
+.lead-text {
+    font-size: 1.15rem;
+    line-height: 2;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.section-text {
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #4a4a4a;
+    font-weight: 300;
+}
+
+/* Impact Cards */
+.impact-card {
+    text-align: center;
+    padding: 50px 35px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.5s ease;
+}
+
+.impact-card:hover {
+    background: rgba(255,255,255,0.03);
+    border-color: #C5A059;
+}
+
+.impact-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 30px;
+    border: 1px solid #C5A059;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.impact-card:hover .impact-icon {
+    background: #C5A059;
+}
+
+.impact-icon i {
+    font-size: 1.8rem;
+    color: #C5A059;
+    transition: all 0.4s ease;
+}
+
+.impact-card:hover .impact-icon i {
+    color: #0F172A;
+}
+
+.impact-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.impact-card p {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.stat-item {
+    background: #ffffff;
+    padding: 35px;
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 1px solid #E5E7EB;
+}
+
+.stat-item:hover {
+    border-color: #C5A059;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.stat-number {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #0F172A;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+/* Values Section */
+.vision-statement {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    color: rgba(255,255,255,0.9);
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto 70px;
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+.values-row {
+    margin-top: 50px;
+}
+
+.value-card {
+    background: transparent;
+    padding: 45px 30px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.value-card:hover {
+    border-color: #C5A059;
+    background: rgba(255,255,255,0.02);
+}
+
+.value-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: rgba(197, 160, 89, 0.3); /* Faded Gold */
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.value-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.value-card p {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.9rem;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+/* Division Cards */
+.divisions-row {
+    margin-top: 60px;
+}
+
+.division-card {
+    background: #ffffff;
+    padding: 55px 40px;
+    text-align: center;
+    transition: all 0.5s ease;
+    height: 100%;
+    border: 1px solid #E5E7EB;
+}
+
+.division-card:hover {
+    border-color: #C5A059;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+}
+
+.division-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 35px;
+    border: 1px solid #0F172A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.division-card:hover .division-icon {
+    background: #0F172A;
+    border-color: #0F172A;
+}
+
+.division-icon i {
+    font-size: 2rem;
+    color: #0F172A;
+    transition: all 0.4s ease;
+}
+
+.division-card:hover .division-icon i {
+    color: #C5A059;
+}
+
+.division-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    color: #0F172A;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.division-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.division-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #9A252A;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.division-link:hover {
+    color: #C5A059;
+}
+
+.division-link i {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.division-link:hover i {
+    transform: translateX(5px);
+}
+
+/* Quote Block */
+.quote-block {
+    position: relative;
+    padding: 80px 50px;
+}
+
+.quote-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 10rem;
+    color: #C5A059;
+    opacity: 0.2;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1;
+}
+
+.quote-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #0F172A;
+    line-height: 1.9;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+}
+
+.quote-author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #9A252A;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   5. ABOUT/STATIC PAGE STYLES
+   ========================================= */
+
+/* Page Header */
+.page-header {
+    background: #0F172A;
+    padding: 80px 0 60px;
+    text-align: center;
+    border-bottom: 3px solid #C5A059;
+}
+
+.page-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.page-breadcrumb {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.page-breadcrumb a {
+    color: #C5A059;
+}
+
+.page-breadcrumb span {
+    margin: 0 10px;
+}
+
+/* Page Content */
+.page-content {
+    padding: 60px 0;
+}
+
+.page-content h2 {
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.page-content h2:first-child {
+    margin-top: 0;
+}
+
+.page-content p {
+    margin-bottom: 25px;
+}
+
+.page-content ul, .page-content ol {
+    margin-bottom: 30px;
+}
+
+.page-content li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+/* About Navigation Links */
+.about-nav {
+    margin-top: 60px;
+    padding-top: 50px;
+    border-top: 1px solid #E5E7EB;
+}
+
+.about-nav h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #888;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.about-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about-nav-link {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+.about-nav-link:hover {
+    border-color: #C5A059;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.nav-icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #0F172A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    transition: all 0.4s ease;
+}
+
+.about-nav-link:hover .nav-icon {
+    background: #0F172A;
+}
+
+.nav-icon i {
+    color: #0F172A;
+    font-size: 1.2rem;
+    transition: all 0.4s ease;
+}
+
+.about-nav-link:hover .nav-icon i {
+    color: #C5A059;
+}
+
+.nav-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color: #0F172A;
+    flex: 1;
+    font-weight: 600;
+}
+
+.nav-arrow {
+    color: #C5A059;
+    transition: transform 0.3s ease;
+}
+
+.about-nav-link:hover .nav-arrow {
+    transform: translateX(5px);
+}
+
+/* =========================================
+   6. SCROLL REVEAL ANIMATIONS
+   ========================================= */
+
+.reveal-item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animation delays */
+.reveal-item:nth-child(1) { transition-delay: 0s; }
+.reveal-item:nth-child(2) { transition-delay: 0.15s; }
+.reveal-item:nth-child(3) { transition-delay: 0.3s; }
+.reveal-item:nth-child(4) { transition-delay: 0.45s; }
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================================
+   7. RESPONSIVE
+   ========================================= */
+
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .home-section {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .home-section {
+        padding: 60px 0;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .impact-card,
+    .value-card,
+    .division-card {
+        margin-bottom: 30px;
+    }
+    
+    .quote-text {
+        font-size: 1.4rem;
+    }
+    
+    .page-title {
+        font-size: 2.2rem;
+    }
 }
