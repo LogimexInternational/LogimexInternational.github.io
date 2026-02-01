@@ -103,7 +103,7 @@ pluralizelisttitles = false
     address = """<p><strong>Logimex International</strong><br>Jaipur, India</p>"""
     
     [params.topbar]
-    enable = true
+    enable = false
     text = "Welcome to Logimex International"
 
 

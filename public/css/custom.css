@@ -15,15 +15,15 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .text-uppercase {
     font-weight: 600;
 }
 
-h1 { font-size: 4.5rem; } /* Make main titles huge and dramatic */
-h2 { font-size: 3.2rem; }
+h1 { font-size: 5rem; } /* Make main titles huge and dramatic */
+h2 { font-size: 3.5rem; }
 
 /* BODY TEXT - Clean & Airy */
 body, p, li, a {
     font-family: 'Montserrat', sans-serif;
     color: #4a4a4a; /* Soft Charcoal, not black */
     font-weight: 300; /* Thinner text looks more premium */
-    font-size: 19px;
+    font-size: 20px;
     line-height: 1.9; /* More spacing between lines */
 }
 
@@ -33,31 +33,281 @@ body, p, li, a {
 
 /* --- BACKGROUNDS --- */
 body {
-    background-color: #FAFAFA; /* Alabaster White (Softer) */
+    background-color: #F5F3EF; /* Warm Cream/Ivory - Luxurious Off-White */
 }
 
-/* Alternate sections (Gray/Silver) */
+/* Alternate sections (Warm Gray) */
 .bar.background-gray, .box-gray {
-    background-color: #F0F2F5 !important;
-    border-top: 1px solid #E5E7EB;
+    background-color: #EBE8E3 !important;
+    border-top: 1px solid #DDD9D2;
 }
 
-/* Top Bar & Footer - Deep Midnight */
+/* Top Bar - Deep Midnight */
 #top {
-    background: #0F172A; /* Deep Midnight Slate */
-    color: #ffffff;
-    border-bottom: 3px solid #C5A059; /* The "Gold" Trim line */
-}
-
-#footer {
     background: #0F172A;
     color: #ffffff;
+    border-bottom: 3px solid #C5A059;
+}
+
+/* =========================================
+   LUXURY FOOTER STYLES
+   ========================================= */
+.luxury-footer {
+    background: linear-gradient(180deg, #0F172A 0%, #0a0f1a 100%);
+    color: #ffffff;
+    padding: 80px 0 50px;
     border-top: 3px solid #C5A059;
 }
 
-#copyright {
-    background: #0a0f1a;
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+/* Footer Brand/Logo Column */
+.footer-brand {
+    padding-right: 30px;
+}
+
+.footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-tagline {
+    font-size: 1.25rem;
+    line-height: 1.9;
     color: rgba(255,255,255,0.7);
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* Social Icons */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    color: rgba(255,255,255,0.7);
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    background: transparent;
+}
+
+.social-icon:hover {
+    background: #C5A059;
+    border-color: #C5A059;
+    color: #0F172A;
+    transform: translateY(-3px);
+}
+
+.social-icon svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover svg {
+    transform: scale(1.1);
+}
+
+/* Footer Column Headings */
+.footer-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #C5A059;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+/* Footer Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 16px;
+}
+
+.footer-links a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+}
+
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #C5A059;
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #C5A059;
+    transform: translateX(5px);
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+/* Contact Info in Footer */
+.footer-contact-info li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contact-label {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+
+.footer-contact-info span:last-child,
+.footer-contact-info a {
+    color: rgba(255,255,255,0.85);
+    font-size: 1.15rem;
+}
+
+/* Footer CTA Button */
+.footer-cta {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 16px 32px;
+    border: 1px solid #C5A059;
+    color: #C5A059;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.footer-cta:hover {
+    background: #C5A059;
+    color: #0F172A;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(197, 160, 89, 0.3);
+}
+
+/* Copyright Bar */
+.luxury-copyright {
+    background: #060910;
+    padding: 25px 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.copyright-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.4);
+    margin: 0;
+    font-weight: 300;
+}
+
+.copyright-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.copyright-links a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 300;
+}
+
+.copyright-links a:hover {
+    color: #C5A059;
+}
+
+.copyright-links .divider {
+    color: rgba(255,255,255,0.2);
+    font-size: 0.7rem;
+}
+
+/* Footer Responsive */
+@media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    
+    .footer-brand {
+        grid-column: span 2;
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-brand {
+        grid-column: span 1;
+    }
+    
+    .footer-heading {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    
+    .footer-links a:hover {
+        transform: none;
+    }
+    
+    .copyright-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
 }
 
 /* --- BUTTONS (The biggest change) --- */
@@ -187,11 +437,12 @@ a:hover {
 /* Hero Section */
 .home-hero {
     position: relative;
-    background: linear-gradient(135deg, #0F172A 0%, #1e293b 100%);
+    background: #0F172A;
     padding: 200px 0 180px;
     overflow: hidden;
 }
 
+/* Background Image */
 .home-hero::before {
     content: '';
     position: absolute;
@@ -199,24 +450,78 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/img/pattern-dots.png') repeat;
-    opacity: 0.05;
+    background-image: url('/img/home-page-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: bgFadeIn 2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes bgFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Dark Tint Overlay */
+.home-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(15, 23, 42, 0.75) 0%,
+        rgba(15, 23, 42, 0.85) 50%,
+        rgba(15, 23, 42, 0.9) 100%
+    );
+    z-index: 1;
+}
+
+/* Vignette Effect for luxury feel */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        ellipse at center,
+        transparent 0%,
+        rgba(0, 0, 0, 0.3) 100%
+    );
+    z-index: 2;
+    pointer-events: none;
 }
 
 .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     text-align: center;
 }
 
 .hero-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 6.5rem;
+    font-size: 7rem;
     font-weight: 600;
     color: #ffffff;
     margin-bottom: 25px;
     letter-spacing: 3px;
-    overflow: hidden;
+    overflow: visible;
+    padding-bottom: 10px;
+    text-shadow: 
+        0 2px 10px rgba(0, 0, 0, 0.5),
+        0 4px 30px rgba(0, 0, 0, 0.3),
+        0 0 80px rgba(197, 160, 89, 0.15);
 }
 
 /* Apple-style Letter Animation */
@@ -271,27 +576,51 @@ a:hover {
 /* Tagline - Division names */
 .hero-tagline {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: #C5A059;
     letter-spacing: 6px;
     text-transform: uppercase;
-    margin-bottom: 15px;
-    opacity: 0;
-    animation: subtitleFade 1s ease forwards;
-    animation-delay: 2.2s;
+    margin-bottom: 35px;
 }
 
-.hero-subtitle {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 300;
-    color: rgba(255,255,255,0);
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-    animation: subtitleFade 1s ease forwards;
-    animation-delay: 2.4s;
+.tagline-word {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(15px);
+    animation: taglineReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: calc(0.3s * var(--j) + 2.2s);
+}
+
+.tagline-dot {
+    display: inline-block;
+    opacity: 0;
+    margin: 0 15px;
+    animation: dotReveal 0.5s ease forwards;
+    animation-delay: calc(0.3s * var(--j) + 2.2s);
+}
+
+@keyframes taglineReveal {
+    0% {
+        opacity: 0;
+        filter: blur(8px);
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes dotReveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes subtitleFade {
@@ -312,12 +641,12 @@ a:hover {
     background-color: transparent;
     border: 2px solid #fff;
     color: #fff;
-    padding: 15px 40px;
-    font-size: 13px;
+    padding: 18px 45px;
+    font-size: 14px;
     letter-spacing: 3px;
     opacity: 0;
     animation: buttonReveal 0.8s ease forwards;
-    animation-delay: 2.6s;
+    animation-delay: 3.8s;
 }
 
 @keyframes buttonReveal {
@@ -358,7 +687,7 @@ a:hover {
 /* Section Titles */
 .section-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     font-weight: 600;
     color: #0F172A;
     margin-bottom: 20px;
@@ -391,7 +720,7 @@ a:hover {
 
 /* Lead Text */
 .lead-text {
-    font-size: 1.35rem;
+    font-size: 1.45rem;
     line-height: 1.9;
     color: #4a4a4a;
     margin-bottom: 25px;
@@ -399,7 +728,7 @@ a:hover {
 }
 
 .section-text {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1.9;
     color: #4a4a4a;
     font-weight: 300;
@@ -447,7 +776,7 @@ a:hover {
 
 .impact-card h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     color: #ffffff;
     margin-bottom: 18px;
     font-weight: 600;
@@ -455,7 +784,7 @@ a:hover {
 
 .impact-card p {
     color: rgba(255,255,255,0.7);
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     font-weight: 300;
 }
@@ -483,7 +812,7 @@ a:hover {
 .stat-number {
     display: block;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 600;
     color: #0F172A;
     margin-bottom: 8px;
@@ -491,7 +820,7 @@ a:hover {
 
 .stat-label {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #888;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -501,10 +830,10 @@ a:hover {
 /* Values Section */
 .vision-statement {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     color: rgba(255,255,255,0.9);
     font-style: italic;
-    max-width: 850px;
+    max-width: 900px;
     margin: 0 auto 60px;
     line-height: 1.8;
     font-weight: 400;
@@ -540,7 +869,7 @@ a:hover {
 
 .value-card h4 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #ffffff;
     margin-bottom: 15px;
     font-weight: 600;
@@ -548,7 +877,7 @@ a:hover {
 
 .value-card p {
     color: rgba(255,255,255,0.7);
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     line-height: 1.8;
     font-weight: 300;
 }
@@ -610,7 +939,7 @@ a:hover {
 
 .division-card h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     color: #0F172A;
     margin-bottom: 18px;
     font-weight: 600;
@@ -618,7 +947,7 @@ a:hover {
 
 .division-card p {
     color: #666;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 30px;
     font-weight: 300;
@@ -669,7 +998,7 @@ a:hover {
 
 .quote-text {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     font-style: italic;
     color: #0F172A;
     line-height: 1.8;
@@ -681,7 +1010,7 @@ a:hover {
 
 .quote-author {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: #9A252A;
     letter-spacing: 2px;
