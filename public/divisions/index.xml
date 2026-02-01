@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Divisions on Logimex International</title>
+    <link>http://localhost:1313/divisions/</link>
+    <description>Recent content in Divisions on Logimex International</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/divisions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logistics</title>
+      <link>http://localhost:1313/divisions/logistics/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/divisions/logistics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Retail</title>
+      <link>http://localhost:1313/divisions/retail/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/divisions/retail/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/divisions/security/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/divisions/security/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

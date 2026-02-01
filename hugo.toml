@@ -12,14 +12,67 @@ pluralizelisttitles = false
     weight = 1
 
 [[menu.main]]
-    name = "Services"
-    url  = "/services/"
+    identifier = "about"
+    name = "About"
+    url  = "/about/"
     weight = 2
+
+[[menu.main]]
+    name = "Who We Are"
+    parent = "about"
+    url  = "/about/"
+    weight = 1
+
+[[menu.main]]
+    name = "History"
+    parent = "about"
+    url  = "/about/history/"
+    weight = 2
+
+[[menu.main]]
+    name = "Leadership"
+    parent = "about"
+    url  = "/about/leadership/"
+    weight = 3
+
+[[menu.main]]
+    identifier = "divisions"
+    name = "Divisions"
+    url  = "/divisions/"
+    weight = 3
+
+[[menu.main]]
+    name = "Logistics"
+    parent = "divisions"
+    url  = "/divisions/logistics/"
+    weight = 1
+
+[[menu.main]]
+    name = "Retail"
+    parent = "divisions"
+    url  = "/divisions/retail/"
+    weight = 2
+
+[[menu.main]]
+    name = "Security"
+    parent = "divisions"
+    url  = "/divisions/security/"
+    weight = 3
+
+[[menu.main]]
+    name = "Sustainability"
+    url  = "/sustainability/"
+    weight = 4
+
+[[menu.main]]
+    name = "News"
+    url  = "/news/"
+    weight = 5
 
 [[menu.main]]
     name = "Contact"
     url  = "/contact/"
-    weight = 3
+    weight = 6
 
 [params]
     viewMorePostLink = "/blog/"

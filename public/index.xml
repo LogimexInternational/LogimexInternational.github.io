@@ -6,8 +6,57 @@
     <description>Recent content on Logimex International</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Aug 2021 21:29:20 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logistics</title>
+      <link>http://localhost:1313/divisions/logistics/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/divisions/logistics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>New Partnership</title>
+      <link>http://localhost:1313/news/new-partnership/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/new-partnership/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Press Release</title>
+      <link>http://localhost:1313/news/press-release-1/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/press-release-1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Retail</title>
+      <link>http://localhost:1313/divisions/retail/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/divisions/retail/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/divisions/security/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/divisions/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sustainability</title>
+      <link>http://localhost:1313/sustainability/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sustainability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Who We Are</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Categories Post</title>
       <link>http://localhost:1313/blog/categories-post/</link>
