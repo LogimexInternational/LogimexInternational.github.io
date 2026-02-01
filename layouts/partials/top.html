@@ -1,0 +1,31 @@
+{{/* Top Bar Partial
+    Displays an optional top bar above the navigation.
+    Controlled by params.topbar.enable in hugo.toml
+*/}}
+
+{{ if .Site.Params.topbar.enable }}
+<div id="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-left">
+                {{ if .Site.Params.topbar.text }}
+                    <p class="topbar-text">{{ .Site.Params.topbar.text | safeHTML }}</p>
+                {{ end }}
+            </div>
+            <div class="col-md-6 text-right">
+                {{ if .Site.Params.topbar.phone }}
+                    <span class="topbar-phone">
+                        <i class="fa fa-phone"></i> {{ .Site.Params.topbar.phone }}
+                    </span>
+                {{ end }}
+                {{ if .Site.Params.topbar.email }}
+                    <span class="topbar-email">
+                        <i class="fa fa-envelope"></i> 
+                        <a href="mailto:{{ .Site.Params.topbar.email }}">{{ .Site.Params.topbar.email }}</a>
+                    </span>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

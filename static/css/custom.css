@@ -2677,6 +2677,119 @@ html {
     color: rgba(255, 255, 255, 0.8);
 }
 
+/* =========================================
+   CERTIFICATE SECTION - ENHANCED STYLING
+   ========================================= */
+
+/* Certificate section wrapper with dark background */
+.certificates-section {
+    background: #0F172A;
+    padding: 100px 0;
+}
+
+.certificates-section .section-title {
+    color: #ffffff !important;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.certificates-section .section-subtitle {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.certificates-section .lead-text {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+
+/* Enhanced certificate grid responsive behavior */
+@media (max-width: 576px) {
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+    
+    .certificates-section {
+        padding: 60px 0;
+    }
+    
+    .certificates-section .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* =========================================
+   WHITE TEXT VISIBILITY FIXES - HIGH SPECIFICITY
+   ========================================= */
+
+/* Force white text in dark about-section backgrounds */
+.about-section[style*="background: #0F172A"] .section-title,
+.about-section[style*="background:#0F172A"] .section-title,
+.about-section[style*="background: rgb(15, 23, 42)"] .section-title,
+section[style*="background: #0F172A"] .section-title,
+section[style*="background:#0F172A"] .section-title {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+.about-section[style*="background: #0F172A"] .section-subtitle,
+.about-section[style*="background:#0F172A"] .section-subtitle,
+.about-section[style*="background: rgb(15, 23, 42)"] .section-subtitle,
+section[style*="background: #0F172A"] .section-subtitle,
+section[style*="background:#0F172A"] .section-subtitle {
+    color: rgba(255, 255, 255, 0.7) !important;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.about-section[style*="background: #0F172A"] .lead-text,
+.about-section[style*="background:#0F172A"] .lead-text,
+.about-section[style*="background: rgb(15, 23, 42)"] .lead-text,
+section[style*="background: #0F172A"] .lead-text,
+section[style*="background:#0F172A"] .lead-text,
+.about-section[style*="background: #0F172A"] p,
+.about-section[style*="background:#0F172A"] p,
+section[style*="background: #0F172A"] p,
+section[style*="background:#0F172A"] p {
+    color: rgba(255, 255, 255, 0.8) !important;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Additional specificity for nested elements */
+.about-section[style*="background: #0F172A"] .row .col-md-12 .section-title,
+.about-section[style*="background:#0F172A"] .row .col-md-12 .section-title {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Ensure list items are visible in dark sections */
+.about-section[style*="background: #0F172A"] li,
+.about-section[style*="background:#0F172A"] li,
+section[style*="background: #0F172A"] li,
+section[style*="background:#0F172A"] li {
+    color: rgba(255, 255, 255, 0.8) !important;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Ensure headings are visible in dark sections */
+.about-section[style*="background: #0F172A"] h1,
+.about-section[style*="background: #0F172A"] h2,
+.about-section[style*="background: #0F172A"] h3,
+.about-section[style*="background: #0F172A"] h4,
+section[style*="background: #0F172A"] h1,
+section[style*="background: #0F172A"] h2,
+section[style*="background: #0F172A"] h3,
+section[style*="background: #0F172A"] h4 {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
 /* Sustainability Responsive */
 @media (max-width: 992px) {
     .sustainability-title {
