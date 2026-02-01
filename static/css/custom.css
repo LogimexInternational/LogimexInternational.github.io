@@ -1399,6 +1399,11 @@ html {
     animation-delay: 0.5s;
 }
 
+/* Divisions Hero - use different banner image */
+.about-hero.divisions-hero::before {
+    background-image: url('/img/divisions-banner.png');
+}
+
 /* Dark Tint Overlay - lighter for better image visibility */
 .about-hero::after {
     content: '';

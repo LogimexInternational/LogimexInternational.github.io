@@ -44,19 +44,19 @@ pluralizelisttitles = false
 [[menu.main]]
     name = "Logistics"
     parent = "divisions"
-    url  = "/divisions/logistics/"
+    url  = "/divisions/#logistics"
     weight = 1
 
 [[menu.main]]
     name = "Retail"
     parent = "divisions"
-    url  = "/divisions/retail/"
+    url  = "/divisions/#retail"
     weight = 2
 
 [[menu.main]]
     name = "Security"
     parent = "divisions"
-    url  = "/divisions/security/"
+    url  = "/divisions/#security"
     weight = 3
 
 [[menu.main]]
