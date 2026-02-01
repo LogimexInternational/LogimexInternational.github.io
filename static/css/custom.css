@@ -488,15 +488,25 @@ header {
 /* Brand Text next to Logo */
 .navbar-brand-text {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: #0F172A;
-    letter-spacing: 3px;
-    margin-left: 10px;
+    color: #C5A059;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-left: 12px;
     vertical-align: middle;
     display: inline-block;
     position: relative;
     top: 2px;
+    background: linear-gradient(135deg, #C5A059 0%, #d4af37 50%, #C5A059 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand.home:hover .navbar-brand-text {
+    letter-spacing: 6px;
 }
 
 /* Ensure logo and text are side by side and left-aligned */
@@ -2137,7 +2147,13 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, #0F172A 0%, #1e293b 50%, #0F172A 100%);
+    background-image: url('/img/contact-us-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: bgFadeIn 2s ease forwards;
+    animation-delay: 0.5s;
     z-index: 1;
 }
 
@@ -2148,7 +2164,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(ellipse at 30% 50%, rgba(197, 160, 89, 0.08) 0%, transparent 60%);
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.5) 0%, rgba(15, 23, 42, 0.7) 100%);
     z-index: 2;
 }
 
@@ -2458,5 +2474,245 @@ html {
     .contact-form-wrapper,
     .contact-info-wrapper {
         padding: 30px 25px;
+    }
+}
+
+/* =========================================
+   SUSTAINABILITY PAGE STYLES
+   ========================================= */
+
+/* Sustainability Hero Section */
+.sustainability-hero {
+    position: relative;
+    background: #0F172A;
+    padding: 180px 0 140px;
+    overflow: hidden;
+}
+
+.sustainability-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/img/sustainability-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: bgFadeIn 2s ease forwards;
+    animation-delay: 0.5s;
+    z-index: 1;
+}
+
+.sustainability-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.5) 0%, rgba(15, 23, 42, 0.7) 100%);
+    z-index: 2;
+}
+
+.sustainability-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.25) 100%);
+    z-index: 3;
+    pointer-events: none;
+}
+
+.sustainability-hero .hero-content {
+    position: relative;
+    z-index: 4;
+    text-align: center;
+}
+
+/* Sequential animations: title first, then line, then tagline */
+.sustainability-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: sustainFadeInUp 1s ease forwards;
+    animation-delay: 0s;
+}
+
+.sustainability-line {
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #C5A059, transparent);
+    margin: 0 auto 25px;
+    opacity: 0;
+    animation: sustainLineExpand 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.sustainability-tagline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    opacity: 0;
+    animation: sustainFadeInUp 1s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes sustainFadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes sustainLineExpand {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 120px;
+        opacity: 1;
+    }
+}
+
+/* Certificate Display Grid */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+.cert-card {
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 40px 25px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    position: relative;
+}
+
+.cert-card:hover {
+    transform: translateY(-8px);
+    border-color: #C5A059;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.cert-card .cert-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(197, 160, 89, 0.3);
+    transition: all 0.4s ease;
+}
+
+.cert-card:hover .cert-icon {
+    border-color: #C5A059;
+    background: rgba(197, 160, 89, 0.1);
+}
+
+.cert-card .cert-icon i {
+    font-size: 1.8rem;
+    color: #C5A059;
+}
+
+.cert-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.cert-card .gold-line {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #C5A059, transparent);
+    margin: 15px auto;
+}
+
+.cert-card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* White text utilities for dark sections */
+.section-title.white {
+    color: #ffffff;
+}
+
+.section-subtitle.white {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.lead-text.white {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Sustainability Responsive */
+@media (max-width: 992px) {
+    .sustainability-title {
+        font-size: 3.5rem;
+    }
+    
+    .sustainability-tagline {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+    
+    .cert-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sustainability-hero {
+        padding: 120px 0 100px;
+    }
+    
+    .sustainability-title {
+        font-size: 2.8rem;
+    }
+    
+    .sustainability-tagline {
+        font-size: 0.9rem;
+        letter-spacing: 1.5px;
+    }
+    
+    .cert-card {
+        padding: 30px 20px;
+    }
+    
+    .cert-card h3 {
+        font-size: 1.4rem;
     }
 }

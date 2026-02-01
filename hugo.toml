@@ -42,6 +42,12 @@ pluralizelisttitles = false
     weight = 3
 
 [[menu.main]]
+    name = "All Divisions"
+    parent = "divisions"
+    url  = "/divisions/"
+    weight = -1
+
+[[menu.main]]
     name = "Logistics"
     parent = "divisions"
     url  = "/divisions/#logistics"
