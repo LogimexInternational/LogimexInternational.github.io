@@ -634,11 +634,11 @@ header {
 
 .hero-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 7rem;
+    font-size: 8rem;
     font-weight: 600;
     color: #ffffff;
-    margin-bottom: 25px;
-    letter-spacing: 3px;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
     overflow: visible;
     padding-bottom: 10px;
     text-shadow: 
@@ -1382,6 +1382,7 @@ html {
     text-align: center;
 }
 
+/* Background Image Layer */
 .about-hero::before {
     content: '';
     position: absolute;
@@ -1389,38 +1390,68 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/img/about-banner.jpg');
+    background-image: url('/img/about-banner.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.4;
+    opacity: 0;
+    animation: bgFadeIn 2s ease forwards;
+    animation-delay: 0.5s;
 }
 
+/* Dark Tint Overlay - lighter for better image visibility */
+.about-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(15, 23, 42, 0.55) 0%,
+        rgba(15, 23, 42, 0.65) 50%,
+        rgba(15, 23, 42, 0.7) 100%
+    );
+    z-index: 1;
+}
+
+/* Vignette Effect for luxury feel */
 .about-hero .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%);
+    background: radial-gradient(
+        ellipse at center,
+        transparent 0%,
+        rgba(0, 0, 0, 0.3) 100%
+    );
+    z-index: 2;
+    pointer-events: none;
 }
 
 .about-hero .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .about-hero .hero-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 4.5rem;
+    font-size: 6rem;
     font-weight: 600;
     color: #ffffff;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
     opacity: 0;
     transform: translateY(30px);
     animation: aboutTitleFadeIn 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     animation-delay: 0.2s;
+    text-shadow: 
+        0 2px 10px rgba(0, 0, 0, 0.5),
+        0 4px 30px rgba(0, 0, 0, 0.3),
+        0 0 80px rgba(197, 160, 89, 0.15);
 }
 
 @keyframes aboutTitleFadeIn {
@@ -1769,6 +1800,134 @@ html {
     letter-spacing: 2px;
 }
 
+/* Section Subtitle */
+.section-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+    color: #C5A059;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* The Logimex Difference Cards */
+.difference-block {
+    margin: 70px 0 30px;
+}
+
+.difference-block h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: #0F172A;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.difference-card {
+    background: #F5F3EF;
+    border: 1px solid #E5E7EB;
+    padding: 45px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.difference-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    border-color: #C5A059;
+}
+
+.difference-icon {
+    width: 70px;
+    height: 70px;
+    background: #0F172A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    transition: all 0.4s ease;
+}
+
+.difference-icon i {
+    font-size: 1.8rem;
+    color: #C5A059;
+    transition: all 0.4s ease;
+}
+
+.difference-card:hover .difference-icon {
+    background: #C5A059;
+}
+
+.difference-card:hover .difference-icon i {
+    color: #ffffff;
+}
+
+.difference-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: #0F172A;
+    margin-bottom: 15px;
+}
+
+.difference-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* Chairman's Message Block */
+.chairman-message {
+    margin-top: 60px;
+}
+
+.chairman-message h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: #0F172A;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.chairman-message .quote-block {
+    background: linear-gradient(135deg, #0F172A 0%, #1a2744 100%);
+    padding: 70px 60px;
+    text-align: center;
+    position: relative;
+    border-left: 4px solid #C5A059;
+}
+
+.chairman-message .quote-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 7rem;
+    color: #C5A059;
+    line-height: 0.5;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.chairman-message .quote-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.chairman-message .quote-author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #C5A059;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
 /* About Page Responsive */
 @media (max-width: 768px) {
     .about-hero {
@@ -1814,5 +1973,25 @@ html {
     
     .leadership-quote .quote-text {
         font-size: 1.4rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .difference-card {
+        padding: 35px 25px;
+    }
+    
+    .chairman-message .quote-block {
+        padding: 50px 30px;
+    }
+    
+    .chairman-message .quote-text {
+        font-size: 1.3rem;
+    }
+    
+    .chairman-message .quote-mark {
+        font-size: 5rem;
     }
 }
