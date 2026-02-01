@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        <!-- Sustainability Hero Banner -->
+        <section class="sustainability-hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Sustainability</h1>
+                    <div class="hero-line"></div>
+                    <p class="hero-tagline-simple">Building a Responsible Future</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Navigation -->
+        <nav class="sustainability-section-nav">
+            <div class="container">
+                <ul class="section-nav-list">
+                    <li><a href="#commitment" class="section-nav-link active"><i class="fa fa-heart"></i> Our Commitment</a></li>
+                    <li><a href="#esg" class="section-nav-link"><i class="fa fa-balance-scale"></i> ESG Framework</a></li>
+                    <li><a href="#initiatives" class="section-nav-link"><i class="fa fa-leaf"></i> Initiatives</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Commitment Section -->
+        <section id="commitment" class="sustainability-section section-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h2 class="section-title reveal-item">Our Commitment</h2>
+                        <p class="section-subtitle reveal-item">Prosperity with Purpose</p>
+                        <div class="title-underline reveal-item"></div>
+                        
+                        <div class="sustainability-content reveal-item">
+                            <p class="lead-text">
+                                At Logimex Group, we believe that sustainable business is not a constraint—it is a competitive advantage. Our commitment to environmental stewardship, social responsibility, and ethical governance is woven into the fabric of every decision we make.
+                            </p>
+                            <p class="lead-text">
+                                As a diversified conglomerate operating across logistics, retail, and security, we recognize our unique responsibility. Our supply chains touch communities on multiple continents. Our retail operations influence consumer choices. Our security services protect livelihoods. With this reach comes an obligation to lead by example.
+                            </p>
+                            <p class="lead-text">
+                                We are committed to building a business that our employees, partners, and communities can be proud of—today and for generations to come.
+                            </p>
+                        </div>
+
+                        <div class="commitment-pillars reveal-item">
+                            <h3>Our Sustainability Pillars</h3>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="pillar-card">
+                                        <div class="pillar-icon"><i class="fa fa-globe"></i></div>
+                                        <h4>Planet</h4>
+                                        <p>Minimizing our environmental footprint through responsible resource management and carbon reduction initiatives.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="pillar-card">
+                                        <div class="pillar-icon"><i class="fa fa-users"></i></div>
+                                        <h4>People</h4>
+                                        <p>Investing in our workforce and communities through fair practices, safety standards, and social development programs.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="pillar-card">
+                                        <div class="pillar-icon"><i class="fa fa-handshake-o"></i></div>
+                                        <h4>Prosperity</h4>
+                                        <p>Creating long-term value for all stakeholders while maintaining the highest standards of ethical governance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESG Framework Section -->
+        <section id="esg" class="sustainability-section section-cream">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h2 class="section-title reveal-item">ESG Framework</h2>
+                        <p class="section-subtitle reveal-item">Environment · Social · Governance</p>
+                        <div class="title-underline reveal-item"></div>
+                        
+                        <div class="sustainability-content reveal-item">
+                            <p class="lead-text">
+                                Our ESG framework provides a structured approach to measuring, managing, and improving our sustainability performance. It guides our strategic decisions and ensures accountability at every level of the organization.
+                            </p>
+                        </div>
+
+                        <div class="esg-grid reveal-item">
+                            <!-- Environmental -->
+                            <div class="esg-category">
+                                <div class="esg-header environmental">
+                                    <i class="fa fa-leaf"></i>
+                                    <h3>Environmental</h3>
+                                </div>
+                                <div class="esg-content">
+                                    <ul class="esg-list">
+                                        <li><strong>Carbon Footprint Reduction:</strong> Transitioning to fuel-efficient fleets and optimizing logistics routes to reduce emissions.</li>
+                                        <li><strong>Sustainable Packaging:</strong> Working with suppliers to minimize packaging waste and increase recyclable materials.</li>
+                                        <li><strong>Energy Efficiency:</strong> Implementing solar power and LED lighting across our warehouses and offices.</li>
+                                        <li><strong>Waste Management:</strong> Zero-to-landfill targets for our major operational facilities.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Social -->
+                            <div class="esg-category">
+                                <div class="esg-header social">
+                                    <i class="fa fa-heart"></i>
+                                    <h3>Social</h3>
+                                </div>
+                                <div class="esg-content">
+                                    <ul class="esg-list">
+                                        <li><strong>Employee Welfare:</strong> Competitive wages, health benefits, and professional development opportunities.</li>
+                                        <li><strong>Diversity & Inclusion:</strong> Building a workforce that reflects the communities we serve.</li>
+                                        <li><strong>Community Investment:</strong> Supporting local education, healthcare, and livelihood programs.</li>
+                                        <li><strong>Supply Chain Ethics:</strong> Ensuring fair labor practices across our vendor network.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Governance -->
+                            <div class="esg-category">
+                                <div class="esg-header governance">
+                                    <i class="fa fa-university"></i>
+                                    <h3>Governance</h3>
+                                </div>
+                                <div class="esg-content">
+                                    <ul class="esg-list">
+                                        <li><strong>Board Oversight:</strong> Dedicated sustainability committee with quarterly performance reviews.</li>
+                                        <li><strong>Ethical Conduct:</strong> Zero-tolerance policy for bribery, corruption, and unethical behavior.</li>
+                                        <li><strong>Transparency:</strong> Annual sustainability reporting aligned with global standards.</li>
+                                        <li><strong>Risk Management:</strong> Integrating ESG risks into enterprise risk framework.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Initiatives Section -->
+        <section id="initiatives" class="sustainability-section section-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h2 class="section-title reveal-item">Our Initiatives</h2>
+                        <p class="section-subtitle reveal-item">Action Over Words</p>
+                        <div class="title-underline reveal-item"></div>
+                        
+                        <div class="sustainability-content reveal-item">
+                            <p class="lead-text">
+                                Sustainability is not a slogan at Logimex—it is a practice. Here are some of the initiatives we are actively implementing across our divisions.
+                            </p>
+                        </div>
+
+                        <div class="initiatives-grid reveal-item">
+                            <div class="initiative-card">
+                                <div class="initiative-icon"><i class="fa fa-truck"></i></div>
+                                <div class="initiative-content">
+                                    <h4>Green Fleet Initiative</h4>
+                                    <p>Transitioning 30% of our logistics fleet to CNG and electric vehicles by 2028. Route optimization AI reduces fuel consumption by 15%.</p>
+                                    <span class="initiative-division">Logimex Logistics</span>
+                                </div>
+                            </div>
+
+                            <div class="initiative-card">
+                                <div class="initiative-icon"><i class="fa fa-sun-o"></i></div>
+                                <div class="initiative-content">
+                                    <h4>Solar-Powered Warehouses</h4>
+                                    <p>Installing rooftop solar panels across our warehousing network, targeting 50% renewable energy usage by 2027.</p>
+                                    <span class="initiative-division">Logimex Logistics</span>
+                                </div>
+                            </div>
+
+                            <div class="initiative-card">
+                                <div class="initiative-icon"><i class="fa fa-recycle"></i></div>
+                                <div class="initiative-content">
+                                    <h4>Sustainable Sourcing</h4>
+                                    <p>Partnering exclusively with suppliers who meet our ethical and environmental standards. 100% plastic-free packaging goal by 2026.</p>
+                                    <span class="initiative-division">Logimex Retail</span>
+                                </div>
+                            </div>
+
+                            <div class="initiative-card">
+                                <div class="initiative-icon"><i class="fa fa-graduation-cap"></i></div>
+                                <div class="initiative-content">
+                                    <h4>Security Training Academy</h4>
+                                    <p>Free vocational training for underprivileged youth, providing career pathways into the security industry.</p>
+                                    <span class="initiative-division">Logimex Security</span>
+                                </div>
+                            </div>
+
+                            <div class="initiative-card">
+                                <div class="initiative-icon"><i class="fa fa-tree"></i></div>
+                                <div class="initiative-content">
+                                    <h4>Logimex Forest</h4>
+                                    <p>Committed to planting 10,000 trees annually in partnership with local environmental organizations in Rajasthan.</p>
+                                    <span class="initiative-division">Group Initiative</span>
+                                </div>
+                            </div>
+
+                            <div class="initiative-card">
+                                <div class="initiative-icon"><i class="fa fa-medkit"></i></div>
+                                <div class="initiative-content">
+                                    <h4>Community Health Camps</h4>
+                                    <p>Organizing quarterly health check-up camps in rural areas surrounding our operational hubs.</p>
+                                    <span class="initiative-division">Group Initiative</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sustainability-cta reveal-item">
+                            <div class="cta-block">
+                                <h3>Join Our Journey</h3>
+                                <p>Sustainability is a collective effort. We invite our partners, suppliers, and stakeholders to join us in building a more responsible future.</p>
+                                <a href="/contact/" class="btn btn-gold">Get in Touch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+    <!-- Smooth Scroll for Section Navigation -->
+    <script>
+    document.querySelectorAll('.section-nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            // Update active state
+            document.querySelectorAll('.section-nav-link').forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
+    // Update active nav on scroll
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('.sustainability-section');
+        const navLinks = document.querySelectorAll('.section-nav-link');
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 150;
+            if (pageYOffset >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    });
+    </script>
+
+  </body>
+</html>
