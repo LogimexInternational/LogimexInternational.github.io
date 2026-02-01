@@ -373,25 +373,147 @@ a:hover {
 /* Navbar Menu */
 .navbar-default {
     background-color: #fff;
-    border-bottom: 1px solid #eee;
+    border-bottom: none;
+    margin-bottom: 0;
+    min-height: 70px;
+}
+
+/* Remove white gap below navbar */
+.navbar-affixed-top {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#navbar {
+    margin-bottom: 0 !important;
+    border: none !important;
+    padding-bottom: 0 !important;
+}
+
+/* Remove any gap between header and content */
+header.navbar-affixed-top + *,
+#navbar + *,
+.navbar + * {
+    margin-top: 0 !important;
+}
+
+/* Fix for theme's default spacing */
+.navbar-default {
+    margin-bottom: 0 !important;
+}
+
+header {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Vertically center navbar items */
+.navbar-nav {
+    display: flex;
+    align-items: stretch;
+}
+
+.navbar-nav > li {
+    display: flex;
+    align-items: center;
 }
 
 .navbar-default .navbar-nav > li > a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 1.5px;
+    font-size: 14px;
+    letter-spacing: 2px;
     color: #0F172A !important;
-    font-weight: 500;
+    font-weight: 600;
+    padding: 25px 18px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
-/* Active Menu Item - Underlined with Gold */
+/* Menu Item Hover - Golden Highlight */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: #C5A059 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+/* Remove ALL borders/lines on menu items */
+.navbar-default .navbar-nav > li > a {
+    border: none !important;
+    text-decoration: none !important;
+}
+
+.navbar-default .navbar-nav > li > a::before,
+.navbar-default .navbar-nav > li > a::after {
+    display: none !important;
+}
+
+/* Dropdown Menu Styling */
+.navbar-default .navbar-nav .dropdown-menu {
+    background-color: #F5F3EF;
+    border: 1px solid #E5E7EB;
+    border-top: 2px solid #C5A059;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.navbar-default .navbar-nav .dropdown-menu > li > a {
+    font-family: 'Cormorant Garamond', serif;
+    color: #0F172A !important;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar-default .navbar-nav .dropdown-menu > li > a:hover {
+    background-color: #C5A059 !important;
+    color: #ffffff !important;
+}
+
+/* Active Menu Item - Gold Color (No Underline) */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     background: transparent !important;
-    color: #9A252A !important;
-    border-bottom: 2px solid #C5A059; /* Gold Underline */
+    color: #C5A059 !important;
+    border: none !important;
+    text-decoration: none !important;
+}
+
+/* Brand Text next to Logo */
+.navbar-brand-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #0F172A;
+    letter-spacing: 3px;
+    margin-left: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+/* Ensure logo and text are side by side and left-aligned */
+.navbar-brand.home {
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.navbar-header {
+    float: left;
+}
+
+.navbar-brand.home img {
+    display: inline-block;
 }
 
 /* --- ICONS & BOXES --- */
@@ -440,6 +562,7 @@ a:hover {
     background: #0F172A;
     padding: 200px 0 180px;
     overflow: hidden;
+    margin-top: 0 !important;
 }
 
 /* Background Image */
@@ -1242,5 +1365,454 @@ html {
     
     .page-title {
         font-size: 2.2rem;
+    }
+}
+
+/* =========================================
+   ABOUT PAGE - LUXURY STYLES
+   ========================================= */
+
+/* About Hero Banner */
+.about-hero {
+    position: relative;
+    background: #0F172A;
+    padding: 180px 0 140px;
+    overflow: hidden;
+    margin-top: 0 !important;
+    text-align: center;
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/img/about-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+.about-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%);
+}
+
+.about-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: aboutTitleFadeIn 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes aboutTitleFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-hero .hero-line {
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #C5A059, transparent);
+    margin: 30px auto;
+    animation: lineExpand 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 0.8s;
+}
+
+.hero-tagline-simple {
+    opacity: 0;
+    animation: aboutTitleFadeIn 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 1.5s;
+}
+
+.hero-tagline-simple {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 300;
+}
+
+/* Section Navigation Bar */
+.about-section-nav {
+    background: #ffffff;
+    padding: 0;
+    border-bottom: 1px solid #E5E7EB;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.section-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.section-nav-list li {
+    margin: 0;
+}
+
+.section-nav-link {
+    display: block;
+    padding: 20px 40px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0F172A;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.section-nav-link:hover,
+.section-nav-link.active {
+    color: #C5A059;
+    border-bottom-color: #C5A059;
+    background: transparent;
+    text-decoration: none;
+}
+
+/* About Sections */
+.about-section {
+    padding: 100px 0;
+}
+
+.about-section.section-white {
+    background: #ffffff;
+}
+
+.about-section.section-cream {
+    background: #F5F3EF;
+}
+
+.about-section .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    color: #0F172A;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about-section .title-underline {
+    width: 60px;
+    height: 2px;
+    background: #C5A059;
+    margin: 0 auto 50px;
+}
+
+.about-content {
+    margin-bottom: 50px;
+}
+
+.about-content .lead-text {
+    font-size: 1.25rem;
+    line-height: 1.9;
+    color: #4a4a4a;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Mission Block */
+.mission-block {
+    background: #F5F3EF;
+    padding: 50px;
+    margin: 50px 0;
+    text-align: center;
+    border-left: 4px solid #C5A059;
+}
+
+.mission-block h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: #0F172A;
+    margin-bottom: 20px;
+}
+
+.mission-block p {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Division Cards */
+.divisions-grid {
+    margin: 60px 0;
+}
+
+.divisions-grid h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: #0F172A;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.division-card {
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    height: 100%;
+}
+
+.division-card:hover {
+    border-color: #C5A059;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+}
+
+.division-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #C5A059;
+    color: #C5A059;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.division-icon i,
+.division-icon .fa {
+    color: #C5A059;
+    transition: all 0.3s ease;
+}
+
+.division-card:hover .division-icon {
+    background: #C5A059;
+    border-color: #C5A059;
+}
+
+.division-card:hover .division-icon i,
+.division-card:hover .division-icon .fa {
+    color: #ffffff !important;
+}
+
+.division-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    color: #0F172A;
+    margin-bottom: 15px;
+}
+
+.division-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Headquarters Block */
+.headquarters-block {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 50px;
+    border-top: 1px solid #E5E7EB;
+}
+
+.headquarters-block h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: #0F172A;
+    margin-bottom: 20px;
+}
+
+.headquarters-block p {
+    font-size: 1.05rem;
+    color: #4a4a4a;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 60px auto 0;
+    padding-left: 60px;
+}
+
+/* No ::before - we'll create individual line segments */
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 50px;
+    padding-left: 40px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+/* Line segment before circle */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -53px;
+    top: 16px;
+    bottom: -50px;
+    width: 2px;
+    background: #C5A059;
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+/* Circle - centered on line */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: -60px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background: #F5F3EF;
+    border-radius: 50%;
+    border: 3px solid #C5A059;
+    z-index: 2;
+}
+
+.timeline-year {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #C5A059;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.timeline-content h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    color: #0F172A;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Leadership Quote */
+.leadership-quote {
+    margin-top: 60px;
+}
+
+.leadership-quote .quote-block {
+    background: #F5F3EF;
+    padding: 60px;
+    text-align: center;
+    position: relative;
+}
+
+.leadership-quote .quote-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 6rem;
+    color: #C5A059;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.leadership-quote .quote-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: #0F172A;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.leadership-quote .quote-author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #C5A059;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* About Page Responsive */
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 120px 0 80px;
+    }
+    
+    .about-hero .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .section-nav-list {
+        flex-direction: column;
+    }
+    
+    .section-nav-link {
+        padding: 15px 20px;
+        text-align: center;
+    }
+    
+    .about-section {
+        padding: 60px 0;
+    }
+    
+    .about-section .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .timeline {
+        padding-left: 30px;
+    }
+    
+    .timeline-item {
+        padding-left: 30px;
+    }
+    
+    .timeline-item::before {
+        left: -30px;
+    }
+    
+    .leadership-quote .quote-block {
+        padding: 40px 25px;
+    }
+    
+    .leadership-quote .quote-text {
+        font-size: 1.4rem;
     }
 }

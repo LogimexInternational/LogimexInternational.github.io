@@ -15,4 +15,4 @@ Our leadership brings decades of combined experience across logistics, retail, s
 
 > *"Our success is driven by our people and their commitment to getting the job done, every day, safely and efficiently."*
 >
-> — **Chairman, Logimex Group**
+> — **Chairman, Logimex International**

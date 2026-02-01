@@ -26,13 +26,13 @@ pluralizelisttitles = false
 [[menu.main]]
     name = "History"
     parent = "about"
-    url  = "/about/history/"
+    url  = "/about/#history"
     weight = 2
 
 [[menu.main]]
     name = "Leadership"
     parent = "about"
-    url  = "/about/leadership/"
+    url  = "/about/#leadership"
     weight = 3
 
 [[menu.main]]

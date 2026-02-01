@@ -14,46 +14,178 @@
 
         {{ partial "nav.html" . }}
 
-        <!-- Page Header -->
-        <section class="page-header">
+        <!-- About Hero Banner -->
+        <section class="about-hero">
+            <div class="hero-overlay"></div>
             <div class="container">
-                <h1 class="page-title">{{ .Title }}</h1>
-                <div class="page-breadcrumb">
-                    <a href="/">Home</a> <span>/</span> <span>{{ .Title }}</span>
+                <div class="hero-content">
+                    <h1 class="hero-title">About Us</h1>
+                    <div class="hero-line"></div>
+                    <p class="hero-tagline-simple">Discover Our Story</p>
                 </div>
             </div>
         </section>
 
-        <!-- Main Content -->
-        <div id="content">
+        <!-- Section Navigation -->
+        <nav class="about-section-nav">
+            <div class="container">
+                <ul class="section-nav-list">
+                    <li><a href="#who-we-are" class="section-nav-link active">Who We Are</a></li>
+                    <li><a href="#history" class="section-nav-link">Our History</a></li>
+                    <li><a href="#leadership" class="section-nav-link">Leadership</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Who We Are Section -->
+        <section id="who-we-are" class="about-section section-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <article class="page-content reveal-item">
-                            {{ .Content }}
-                        </article>
+                    <div class="col-md-10 col-md-offset-1">
+                        <h2 class="section-title reveal-item">Who We Are</h2>
+                        <div class="title-underline reveal-item"></div>
+                        
+                        <div class="about-content reveal-item">
+                            <p class="lead-text">
+                                Logimex International is a diversified international conglomerate and the parent organization for a strategic portfolio of businesses. With a legacy built on reliability and innovation, we operate at the intersection of global trade, consumer services, and asset protection.
+                            </p>
+                            <p class="lead-text">
+                                What began as a focused logistics operation has evolved into a multi-vertical group, empowering industries and communities across the globe. Our strength lies in our ability to leverage synergies across our divisions, providing our partners with comprehensive, end-to-end solutions.
+                            </p>
+                        </div>
 
-                        <!-- Sub-pages Links -->
-                        <div class="about-nav reveal-item">
-                            <h3>Explore More</h3>
-                            <div class="about-nav-links">
-                                <a href="/about/history/" class="about-nav-link">
-                                    <span class="nav-icon"><i class="fa fa-history"></i></span>
-                                    <span class="nav-text">Our History</span>
-                                    <span class="nav-arrow"><i class="fa fa-arrow-right"></i></span>
-                                </a>
-                                <a href="/about/leadership/" class="about-nav-link">
-                                    <span class="nav-icon"><i class="fa fa-users"></i></span>
-                                    <span class="nav-text">Leadership Team</span>
-                                    <span class="nav-arrow"><i class="fa fa-arrow-right"></i></span>
-                                </a>
+                        <div class="mission-block reveal-item">
+                            <h3>Our Mission</h3>
+                            <p>To deliver exceptional value to our clients, partners, and communities through operational excellence, unwavering integrity, and a commitment to sustainable growth.</p>
+                        </div>
+
+                        <div class="divisions-grid reveal-item">
+                            <h3>Our Divisions</h3>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="division-card">
+                                        <div class="division-icon"><i class="fa fa-ship"></i></div>
+                                        <h4>Logimex Logistics</h4>
+                                        <p>Our founding division, providing air, sea, and land freight solutions, warehousing, and supply chain management.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="division-card">
+                                        <div class="division-icon"><i class="fa fa-shopping-bag"></i></div>
+                                        <h4>Logimex Retail</h4>
+                                        <p>A rapidly growing division focused on bringing premium consumer goods and retail experiences to emerging markets.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="division-card">
+                                        <div class="division-icon"><i class="fa fa-shield"></i></div>
+                                        <h4>Logimex Security</h4>
+                                        <p>Specialized security services protecting critical infrastructure, corporate assets, and personnel.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="headquarters-block reveal-item">
+                            <h3>Headquartered in Jaipur</h3>
+                            <p>From our headquarters in Jaipur, Rajasthan, we operate a vast network of offices, warehouses, and operational hubs. Our localized expertise, combined with our global reach, ensures that we deliver consistent, world-class service wherever our clients need us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section id="history" class="about-section section-cream">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h2 class="section-title reveal-item">Our History</h2>
+                        <div class="title-underline reveal-item"></div>
+                        
+                        <div class="about-content reveal-item">
+                            <p class="lead-text">
+                                Logimex International was founded in 2008 with a vision to revolutionize the logistics industry. What started as a small freight forwarding operation has grown into a global conglomerate spanning multiple industries.
+                            </p>
+                        </div>
+
+                        <div class="timeline reveal-item">
+                            <div class="timeline-item">
+                                <div class="timeline-year">2008</div>
+                                <div class="timeline-content">
+                                    <h4>Foundation</h4>
+                                    <p>Logimex Logistics founded in Jaipur, Rajasthan</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2012</div>
+                                <div class="timeline-content">
+                                    <h4>Global Expansion</h4>
+                                    <p>Expanded operations to international markets</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2015</div>
+                                <div class="timeline-content">
+                                    <h4>Retail Division</h4>
+                                    <p>Launched Logimex Retail division</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2018</div>
+                                <div class="timeline-content">
+                                    <h4>Security Services</h4>
+                                    <p>Established Logimex Security services</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2020</div>
+                                <div class="timeline-content">
+                                    <h4>Multi-Country Operations</h4>
+                                    <p>Reached operations in multiple countries</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2024</div>
+                                <div class="timeline-content">
+                                    <h4>Industry Leadership</h4>
+                                    <p>Celebrated 16+ years of industry leadership</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /#content -->
+        </section>
+
+        <!-- Leadership Section -->
+        <section id="leadership" class="about-section section-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h2 class="section-title reveal-item">Leadership</h2>
+                        <div class="title-underline reveal-item"></div>
+                        
+                        <div class="about-content reveal-item">
+                            <p class="lead-text">
+                                Logimex International is guided by a team of experienced professionals committed to excellence, integrity, and innovation.
+                            </p>
+                            <p class="lead-text">
+                                Our leadership brings decades of combined experience across logistics, retail, security, and corporate management.
+                            </p>
+                        </div>
+
+                        <div class="leadership-quote reveal-item">
+                            <div class="quote-block">
+                                <div class="quote-mark">"</div>
+                                <p class="quote-text">Our success is driven by our people and their commitment to getting the job done, every day, safely and efficiently.</p>
+                                <div class="quote-author">— Chairman, Logimex International</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         {{ partial "footer.html" . }}
 
@@ -61,6 +193,44 @@
     <!-- /#all -->
 
     {{ partial "scripts.html" . }}
+
+    <!-- Smooth Scroll for Section Navigation -->
+    <script>
+    document.querySelectorAll('.section-nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            // Update active state
+            document.querySelectorAll('.section-nav-link').forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
+    // Update active nav on scroll
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('.about-section');
+        const navLinks = document.querySelectorAll('.section-nav-link');
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 150;
+            if (pageYOffset >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    });
+    </script>
 
   </body>
 </html>
