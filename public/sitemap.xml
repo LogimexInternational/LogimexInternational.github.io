@@ -17,6 +17,9 @@
     <loc>http://localhost:1313/about/history/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/privacy-policy/</loc>
+    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/divisions/retail/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -24,6 +27,9 @@
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/sustainability/</loc>
+    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/terms-of-service/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>

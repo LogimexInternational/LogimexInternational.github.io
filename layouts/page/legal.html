@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        <!-- Legal Page Hero Section -->
+        <section class="legal-hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title legal-title">{{ .Title }}</h1>
+                    <div class="hero-line legal-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legal Content Section -->
+        <section class="legal-section section-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="legal-content reveal-item">
+                            <p class="legal-updated">Last Updated: {{ .Date.Format "January 2, 2006" }}</p>
+                            {{ .Content }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>
