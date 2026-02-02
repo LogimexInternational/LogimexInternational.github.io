@@ -15,12 +15,12 @@
     'use strict';
 
     // =====================================================
-    // CONFIGURATION - Update this URL after deploying Apps Script
+    // CONFIGURATION - Google Apps Script Backend
     // =====================================================
-    var GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL';
+    var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyyrMgOssHxdCGPFAttI0NJwyCK-yEAWJv487wqGB6zCOqp1Xfu22pXtOnq0Zm7EIc/exec';
     
-    // Set to true when Apps Script is deployed and URL is configured
-    var IS_BACKEND_READY = false;
+    // Backend is configured and ready
+    var IS_BACKEND_READY = true;
 
     // =====================================================
     // GOOGLE APPS SCRIPT CODE (Deploy this in Google Sheets)
